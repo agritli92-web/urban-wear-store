@@ -9,13 +9,6 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Anton&family=Cairo:wght@400;600;800;900&display=swap" rel="stylesheet">
 <style>
-/* إخفاء شارة Netlify وحدها فقط دون المساس بزر الواتساب */
-#netlify-badge {
-  display: none !important;
-  visibility: hidden !important;
-  opacity: 0 !important;
-}
-
 :root{
   --ink:#121212; --asphalt:#1d1e20; --concrete:#2c2e31; --smoke:#8b8e93; --chalk:#f1f1ee; --wa:#25d366;
   --display:'Anton','Impact','Arial Narrow',sans-serif;
@@ -101,6 +94,10 @@ nav .wrap{display:flex;align-items:center;justify-content:space-between;height:5
 footer{padding:36px 0 110px;text-align:center;color:var(--smoke);border-top:1px solid var(--concrete);font-size:.9rem}
 footer .logo{color:var(--chalk);display:block;margin-bottom:6px;font-size:1.8rem}
 
+.social{display:flex;justify-content:center;gap:12px;margin:14px 0 18px}
+.social a{border:1.5px solid var(--smoke);color:var(--chalk);padding:8px 20px;border-radius:4px;font-weight:800;transition:background .2s,color .2s}
+.social a:hover{background:var(--chalk);color:var(--ink)}
+
 /* floating whatsapp */
 .wa{position:fixed;inset-inline-start:16px;bottom:calc(16px + env(safe-area-inset-bottom,0px));z-index:30;display:flex;align-items:center;gap:10px;background:var(--wa);color:#08130c;font-weight:900;padding:12px 20px 12px 16px;border-radius:999px;box-shadow:0 8px 24px rgba(0,0,0,.55);transition:transform .15s}
 .wa:hover{transform:translateY(-2px)}
@@ -120,6 +117,8 @@ footer .logo{color:var(--chalk);display:block;margin-bottom:6px;font-size:1.8rem
       <a href="#products">المنتجات</a>
       <a href="#visit">الموقع والأوقات</a>
       <a href="#reviews">آراء الزبائن</a>
+      <a href="https://www.instagram.com/urban_wear.28" target="_blank" rel="noopener">إنستغرام</a>
+      <a href="https://www.facebook.com/share/1CELbQrmVd/" target="_blank" rel="noopener">فيسبوك</a>
     </div>
   </div>
 </nav>
@@ -221,7 +220,7 @@ footer .logo{color:var(--chalk);display:block;margin-bottom:6px;font-size:1.8rem
       </div>
       <div class="rev">
         <div class="stars" aria-label="5 نجوم">★★★★★</div>
-        <p>طلبت قبعات عبر واتساب وجاوبوني بسرعة وجهزوه لي. تعامل محترم.</p>
+        <p>طلبت طقم رياضي عبر واتساب وجاوبوني بسرعة وجهزوه لي. تعامل محترم.</p>
         <b>رياض</b><span>المسيلة</span>
       </div>
     </div>
@@ -231,6 +230,10 @@ footer .logo{color:var(--chalk);display:block;margin-bottom:6px;font-size:1.8rem
 <footer>
   <div class="wrap">
     <span class="logo">URBAIN WEAR</span>
+    <div class="social">
+      <a href="https://www.instagram.com/urban_wear.28" target="_blank" rel="noopener">إنستغرام</a>
+      <a href="https://www.facebook.com/share/1CELbQrmVd/" target="_blank" rel="noopener">فيسبوك</a>
+    </div>
     المسيلة، الجزائر · 0656 04 05 99
     <br>© <span id="yr"></span> Urbain Wear. جميع الحقوق محفوظة.
   </div>
@@ -242,6 +245,7 @@ footer .logo{color:var(--chalk);display:block;margin-bottom:6px;font-size:1.8rem
 </a>
 
 <script>
+  // رقم واتساب بصيغة دولية (الجزائر +213) بدون الصفر الأول
   var WA_NUMBER = "213656040599";
   document.querySelectorAll("[data-wa]").forEach(function(el){
     el.href = "https://wa.me/" + WA_NUMBER + "?text=" + encodeURIComponent(el.getAttribute("data-wa"));
