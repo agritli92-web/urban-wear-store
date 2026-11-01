@@ -160,7 +160,7 @@ footer .logo{color:var(--chalk);display:block;margin-bottom:6px;font-size:1.8rem
       <article class="item">
         <div class="art" aria-hidden="true">🧥</div>
         <div class="info">
-          <h3>هوديز</h3>
+          <h3>Hoodies</h3>
           <small>قطن ثقيل، قصّة واسعة (Oversize)، بألوان أسود ورمادي وأبيض.</small>
           <div class="price">4,500 <em>دج</em></div>
           <a class="order" data-wa="السلام عليكم، حبيت نطلب هودي من Urban Wear. واش هي المقاسات والألوان المتوفرة؟">اطلب</a>
@@ -169,28 +169,28 @@ footer .logo{color:var(--chalk);display:block;margin-bottom:6px;font-size:1.8rem
       <article class="item">
         <div class="art" aria-hidden="true">👖</div>
         <div class="info">
-          <h3>الجينزات</h3>
+          <h3>Baggy Jeans</h3>
           <small>جينز Baggy وSlim وStraight بخامة مرنة ومتينة.</small>
           <div class="price">3,800 <em>دج</em></div>
           <a class="order" data-wa="السلام عليكم، حبيت نطلب جينز من Urban Wear. واش هي القصّات والمقاسات المتوفرة؟">اطلب</a>
         </div>
       </article>
       <article class="item">
-        <div class="art" aria-hidden="true">🧢</div>
+        <div class="art" aria-hidden="true">🧥</div>
         <div class="info">
-          <h3>القبعات</h3>
-          <small>كاسكيطات وبوني بتطريز بسيط ومقاس قابل للتعديل.</small>
-          <div class="price">1,500 <em>دج</em></div>
-          <a class="order" data-wa="السلام عليكم، حبيت نطلب قبعة من Urban Wear. واش هي الموديلات المتوفرة؟">اطلب</a>
+          <h3>Jackets</h3>
+          <small>جاكيت جلد وبومبر بقصّة واسعة، مناسبة للشتاء والخرجة.</small>
+          <div class="price">7,500 <em>دج</em></div>
+          <a class="order" data-wa="السلام عليكم، حبيت نطلب جاكيت من Urban Wear. واش هي الموديلات والمقاسات المتوفرة؟">اطلب</a>
         </div>
       </article>
       <article class="item">
-        <div class="art" aria-hidden="true">🏃</div>
+        <div class="art" aria-hidden="true">👟</div>
         <div class="info">
-          <h3>الأطقم الرياضية</h3>
-          <small>طقم كامل (جاكيت + سروال) للرياضة وللخرجة اليومية.</small>
-          <div class="price">6,500 <em>دج</em></div>
-          <a class="order" data-wa="السلام عليكم، حبيت نطلب طقم رياضي من Urban Wear. واش هي الألوان والمقاسات المتوفرة؟">اطلب</a>
+          <h3>Sneakers</h3>
+          <small>سنيكرز بتصاميم عصرية ومريحة للاستعمال اليومي.</small>
+          <div class="price">5,500 <em>دج</em></div>
+          <a class="order" data-wa="السلام عليكم، حبيت نطلب حذاء من Urban Wear. واش هي الموديلات والمقاسات المتوفرة؟">اطلب</a>
         </div>
       </article>
     </div>
@@ -268,7 +268,7 @@ footer .logo{color:var(--chalk);display:block;margin-bottom:6px;font-size:1.8rem
     el.href = "https://wa.me/" + WA_NUMBER + "?text=" + encodeURIComponent(el.getAttribute("data-wa"));
     el.target = "_blank"; el.rel = "noopener";
   });
-  var words = ["STREETWEAR","HOODIES","DENIM","CAPS","TRACKSUITS","M'SILA"], row = "";
+  var words = ["STREETWEAR","HOODIES","DENIM","JACKETS","SNEAKERS","M'SILA"], row = "";
   for (var i = 0; i < 8; i++) words.forEach(function(w){ row += "<span>" + w + "</span>★"; });
   document.getElementById("tk").innerHTML = row;
   document.getElementById("yr").textContent = new Date().getFullYear();
